@@ -332,6 +332,7 @@
                 </div>
               </div>
               <!-- gallery-item end-->
+
               <!-- gallery-item-->
               <div class="gallery-item maternity">
                 <div class="grid-item-holder hov_zoom">
@@ -416,6 +417,15 @@
                 </div>
               </div>
               <!-- gallery-item end-->
+
+              <!-- Pre-wedding Photos -->
+              <div id="loopprewd"></div>
+              <!-- Wedding Photos -->
+              <div id="loopwd"></div>
+              <!-- Maternity Photos -->
+               <div id="loopm"></div>
+              <!-- Baby Shower Photos -->
+              <div id="loopbs"></div>
             </div>
             <!-- portfolio end -->
           </div>
@@ -503,6 +513,72 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script>
+      let populate=document.getElementById('loopm');
+      let str=``;
+      for(let i=1; i<=77; i++){
+        str+=`<div class="gallery-item maternity">
+                <div class="grid-item-holder hov_zoom">
+                  <img src="images/babybum/${i}.webp" alt="" />
+                  <a
+                    href="images/babybum/${i}.webp"
+                    class="box-media-zoom popup-image"
+                    ><i class="fal fa-search"></i
+                  ></a>
+                </div>
+              </div>`
+      }
+      populate.innerHTML=str;
+
+      let populate1=document.getElementById('loopbs');
+      let str1=``;
+      for(let i=1; i<=158; i++){
+        str1+=`<div class="gallery-item baby-shower">
+                <div class="grid-item-holder hov_zoom">
+                  <img src="images/babyshower/${i}.webp" alt="" />
+                  <a
+                    href="images/babyshower/${i}.webp"
+                    class="box-media-zoom popup-image"
+                    ><i class="fal fa-search"></i
+                  ></a>
+                </div>
+              </div>`
+      }
+      populate1.innerHTML=str1;
+
+      let populate2=document.getElementById('loopprewd');
+      let str2=``;
+      for(let i=1; i<=223; i++){
+        str2+=`<div class="gallery-item pre-wedding">
+                <div class="grid-item-holder hov_zoom">
+                  <img src="images/prewedding/${i}.webp" alt="" />
+                  <a
+                    href="images/prewedding/${i}.webp"
+                    class="box-media-zoom popup-image"
+                    ><i class="fal fa-search"></i
+                  ></a>
+                </div>
+              </div>`
+      }
+      populate2.innerHTML=str2;
+
+      let populate3=document.getElementById('loopwd');
+      let str3=``;
+      for(let i=1; i<=15; i++){
+        str3+=`<div class="gallery-item wedding">
+                <div class="grid-item-holder hov_zoom">
+                  <img src="images/wedding/${i}.webp" alt="" />
+                  <a
+                    href="images/wedding/${i}.webp"
+                    class="box-media-zoom popup-image"
+                    ><i class="fal fa-search"></i
+                  ></a>
+                </div>
+              </div>`
+      }
+      populate3.innerHTML=str3;
+
+    </script>
   </body>
 
   <!-- Mirrored from kotlis.kwst.net/light/portfolio6.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 07 Jun 2024 17:08:13 GMT -->
