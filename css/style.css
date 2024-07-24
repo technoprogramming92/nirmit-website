@@ -1441,7 +1441,7 @@ blockquote p {
 	padding-left:50px;
 }
 .home-main_title {
-	bottom:80px;
+	bottom:20%;
 	width:100%;
 }
 .home-main_title_item h4 {
@@ -1469,7 +1469,7 @@ blockquote p {
     content: '';
     position: absolute;
     left: 0;
-    top: -70px;
+    top: -5px;
     width: 50px;
     height: 1px;
     background: #fff;
@@ -3617,8 +3617,8 @@ section.single-content-section {
     padding-left: 100px;
 }
 .home-main_title {
-	bottom:inherit;
-	top:30%;
+	bottom:10%;
+	/* top:30%; */
 }
 .gallery-item {
 	width:50% !important;
@@ -3958,4 +3958,11 @@ section {
 		-webkit-background-size: cover;
 		background-position: center;
 	}
+}
+
+.name-logo{
+	width: 200px;
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
 }
