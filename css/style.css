@@ -3449,6 +3449,9 @@ section.single-content-section {
 #portfolio_horizontal_container  .portfolio_item .thumb-info h3 {
     font-size:14px;
 }
+/* .instaicon{
+	left:16%;
+} */
 }
 @media only screen and (max-width: 1064px) {
 .main-header {
@@ -3617,7 +3620,7 @@ section.single-content-section {
     padding-left: 100px;
 }
 .home-main_title {
-	bottom:10%;
+	bottom:30%;
 	/* top:30%; */
 }
 .gallery-item {
@@ -3692,6 +3695,12 @@ section.single-content-section {
 .fs-slider_align_title h2 {
     line-height: 72px;
 }
+/* .waicon{
+	left:11%;
+}
+.instaicon{
+	left:14%;
+} */
 }
 @media only screen and (max-width: 768px) {
 #portfolio_horizontal_container , .horizontal-grid-wrap    {
@@ -3726,6 +3735,12 @@ section.single-content-section {
 #portfolio_horizontal_container  .portfolio_item .thumb-info h3 {
     font-size:18px;
 }
+/* .waicon{
+	left:16% !important;
+}
+.instaicon{
+	left:18% !important;
+} */
 }
 @media only screen and (max-width: 640px) {
 .fw-carousel .swiper-slide img , .fw-carousel .swiper-slide   {
@@ -3967,17 +3982,76 @@ section {
     margin-bottom: 20px;
 }
 
-.footericon{
-	position:absolute;
-	font-size:9px;
-	left:50%;
-	color:#fff;
-	top:50%;
-	width: 50px;
-	height: 50px;
-	background:none;
-	font-weight:100;
-	line-height:20px;
-	margin:-5px 0 0 -5px;
+.waicon {
+    position: absolute;
+	z-index: 20;
+    left: 14%;
+    bottom: 22%;
+    width: 30px;
+    height: 30px;
+    background: none;
+    font-weight: 100;
+    line-height: 20px;
+    margin: -5px 85px 5px -5px;
+}
 
+.instaicon {
+    position: absolute;
+	z-index: 20;
+    left: 16%;
+    bottom: 22%;
+    width: 37px;
+    height: 37px;
+    background: none;
+    font-weight: 100;
+    line-height: 20px;
+    margin: -5px 40px 0 -5px;
+}
+
+.muffinicon {
+    position: absolute;
+	z-index: 20;
+    right: 1%;
+    bottom: 2%;
+    width: 41px;
+    height: 33px;
+    background: none;
+    font-weight: 100;
+    line-height: 20px;
+    margin: -5px 0 6px -5px;
+
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+	.waicon{
+		left:12%;
+	}
+	.instaicon{
+		left:16%;
+	}
+}
+
+@media only screen and (max-width:768px){
+	.waicon{
+		left:15%;
+	}
+	.instaicon{
+		left:19%;
+	}
+}
+@media only screen and (max-width:640px){
+	.waicon{
+		left:9%;
+	}
+	.instaicon{
+		left:14%;
+	}
+}
+@media only screen and (max-width:530px){
+	.waicon{
+		left:5%;
+	}
+	.instaicon{
+		left:11%;
+	}
 }
